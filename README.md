@@ -26,17 +26,19 @@ Features Multilingual support: English and Tamil Text-to-speech for both languag
 
 Getting Started Prerequisites Python 3.7+ Streamlit SQLite Google Cloud API key for Gemini API deep_translator library for translation gTTS library for text-to-speech youtubesearchpython library for YouTube video search beautifulsoup4 and requests for web scraping Installation Clone the repository:
 
-bash Copy code git clone https://github.com/asvitha1625/knocobot.git cd knocobot Create and activate a virtual environment:
+git clone https://github.com/asvitha1625/knocobot.git cd knocobot Create and activate a virtual environment:
 
-bash Copy code python -m venv venv source venv/bin/activate # On Windows, use venv\Scripts\activate Install the required dependencies:
+python -m venv venv source venv/bin/activate # On Windows, use venv\Scripts\activate Install the required dependencies:
 
-bash Copy code pip install -r requirements.txt Set up environment variables: Create a .env file in the root directory and add your Google Cloud API key:
+pip install -r requirements.txt Set up environment variables: 
 
-makefile Copy code GEMINI_API_KEY=your_google_cloud_api_key Set up the SQLite databases:
+Create a .env file in the root directory and add your Google Cloud API key:
 
-bash Copy code python setup_db.py Usage Run the Streamlit application:
+GEMINI_API_KEY=your_google_cloud_api_key Set up the SQLite databases:
 
-bash Copy code streamlit run app.py Open your web browser and navigate to http://localhost:8501.
+python signin.py.py Usage Run the Streamlit application:
+
+streamlit run signin.py Open your web browser and navigate to http://localhost:8501.
 
 Sign up or log in to start using KnoCoBot.
 
